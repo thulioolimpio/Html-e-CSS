@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos e Mídias!</title>
+</head>
+<body>
+    <h1>Tamanhos em mídias diferentes.</h1>
+    <p>Teste usando o seu navegador, minimizando ou aumentado ele para modificar o tamanho da imagem!</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto adptável.">
+
+    </picture>
+    <h1>Testando áudio!</h1>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Post Malone - Circles(MP3_160K).mp3" type="audio/mpeg">
+        <source src="midia/Post Malone - Circles(MP3_160K).mp3" type="audio/ogg">
+        <p>Infelizmente seu navegador não é compatível,<a href="midia/Post Malone - Circles(MP3_160K).mp3">CLIQUE AQUI PARA BAIXAR!</a></p>
+
+
+
+    </audio>
+
+</body>
+</html>

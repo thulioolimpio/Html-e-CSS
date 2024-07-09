@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-color:#ff9d00e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#principal{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color:#FFBA00;
+
+   
+}
+.basico{
+    background-color:#0099FF ;
+}
+h1{
+    color:#0004ff;
+}
+
+h2{
+    color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links!</title>
+    <style>
+        body{
+         background-color: aliceblue;
+        }
+        a{
+            color: rgb(17, 0, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+            text-decoration:underline;
+        }
+        
+        a:active{
+            color: rgb(0, 77, 128);
+        }
+        a::after{
+            content: "  «";
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+        a::before{
+            content: '»  ';
+            text-decoration: none;
+            font-weight: BOLD; 
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=dESfgB_UnZM&list=RDdESfgB_UnZM&start_radio=1" target="_blank" rel="Externo">Youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf?_ga=2.164719807.1607478401.1719862146-525853752.1713216435" target="_blank" rel="Externo">Github</a></li>
+        <li><a href="https://camedmicrocredito.gupy.io/candidates/applications/451390907" target="_blank" rel="Externo">Gupy</a></li>
+    </ul>
+    
+</body>
+</html>

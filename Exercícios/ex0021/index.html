@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando viewport</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+        main{
+            background-color: white;
+            max-width: 800px;
+            min-width: 280px;
+            margin: auto;
+            padding: 10px;
+        }
+        picture > img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eum saepe mollitia nihil iste dicta amet fuga nisi quisquam! Sapiente enim possimus accusamus nesciunt repellendus aliquid soluta quibusdam. Ea, ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ut. Repudiandae facilis vel rerum quibusdam error aut consequatur, iure libero omnis tempore iusto temporibus aspernatur nemo, ab laboriosam nostrum quam.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="irina-blok-pq.jpg" type="image/jpeg">
+            <img src="irina-blok.jpg" alt="irina-blok">
+        
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eum saepe mollitia nihil iste dicta amet fuga nisi quisquam! Sapiente enim possimus accusamus nesciunt repellendus aliquid soluta quibusdam. Ea, ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ut. Repudiandae facilis vel rerum quibusdam error aut consequatur, iure libero omnis tempore iusto temporibus aspernatur nemo, ab laboriosam nostrum quam.</p>
+    </main>
+    
+</body>
+</html>
