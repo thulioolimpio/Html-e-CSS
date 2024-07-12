@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais formulários</title>
+</head>
+<body>
+    <h1>Preencha o Formulário Abaixo.</h1>
+    <fieldset>
+        <legend>Dados informativos!</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" id="iemail" name="email" required autocomplete="email" placeholder="example@example.com" >
+            </p>
+            <p>
+                <label for="itel"> Número: </label>
+                <input type="tel" id="itel" name="tel" required autocomplete="tel-national" pattern="^(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Outras informações.</legend>
+
+        <p>
+            <label for="imas">Masculino:</label>
+            <input type="radio" name="sex" id="imas">
+            <label for="ifem">Feminino:</label>
+            <input type="radio" name="sex" id="ifem">
+        </p>
+       
+    
+    </fieldset>
+    <fieldset>
+        <legend>Esportes</legend>
+        <p>
+            <input type="checkbox" name="f" id="if">
+            <label for="if">Futebol</label><br>
+            <input type="checkbox" name="f" id="bf">
+            <label for="bf">Basquete</label><br>
+            <input type="checkbox" name="f" id="tf">
+            <label for="tf">Tenis</label><br>
+            <input type="checkbox" name="f" id="hf">
+            <label for="hf">Handball</label><br>
+        </p>
+    </fieldset>
+    
+</body>
+</html>
