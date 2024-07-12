@@ -7,10 +7,34 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php">
-        <p><label for="inome">Nome:</label> <input type="text" id="inome" name="nome"></p>
-        <p><label for="isobrenome">Sobrenome:</label> <input type="text" id="isobrenome" name="nome"></p>
-        <p> <input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="post"  autocomplete="on" >
+
+        <p><label for="inome">Nome:</label>
+             <input type="text" id="inome" name="nome" required minlength="8" maxlength="15" autocomplete="username" size="15" placeholder="Nome do usuário"></p>
+        <p>
+            <label for="isobrenome">Senha:</label> <input type="password" id="isobrenome" name="nome" required minlength="8" maxlength="15" autocomplete="current-password" size="15" placeholder="Minimo 8 caracteres"></p>
+
+            <p>
+                <label for="idata">Data </label>
+                <input type="date" id="idata" name="data" >
+            </p>
+
+            <p>
+                <label for="inumero">Digite a média</label>
+                <input type="number" id="inumero" name="numero" min="0" max="10" required placeholder=" média" size="10" step="0.1" autocomplete='on'> 
+            </p>
+            <p>
+                <label for="ihora">Horário</label>
+                <input type="time" id="ihora" name="hora" placeholder="OI BB" >
+            </p>
+
+
+        <p> <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+            
+       
     </form>
 </body>
 </html>
