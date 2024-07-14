@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando javascript</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <fieldset>
+            <legend>Soma</legend>
+            <p>
+                <label for="in1">Numero:</label>
+                <input type="number" name="n1" id="in1" required min="0" max="50" oninput="isoma.innerHTML =   Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Numero:</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML =   Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output id="isoma">0</output>
+            </p>
+           
+        </fieldset>
+        <fieldset>
+            <legend>Nível</legend>
+            <label for="inivel">Nivel de satisfação</label>
+            <input type="range" name="nivel" id="inivel" required min="0" max="5" oninput="isas.innerHTML = Number(inivel.value)" value="5">
+            <label for="isas"></label>
+            <output id="isas">5</output>
+
+        
+           
+        </fieldset>
+        <fieldset>
+            <legend>Idade</legend>
+            <label for="iano">Em qual ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()">
+
+
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <output id="iidade">0</output>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - (iano.value)
+
+        }
+    </script>
+    
+</body>
+</html>
