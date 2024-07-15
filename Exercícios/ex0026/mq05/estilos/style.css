@@ -80,3 +80,18 @@ article p{
     margin-bottom: 10px;
     text-indent: 20px;
 }
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
