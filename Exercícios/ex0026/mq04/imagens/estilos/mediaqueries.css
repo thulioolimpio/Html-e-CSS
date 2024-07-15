@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media print {
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.3em;
+        
+
+    }
+    h1{
+        color: black;
+        font-size: 1.6em;
+    }
+    main{
+        
+        
+        img#phone{display: none;}
+        img#pc{display: none;}
+        img#print{display: block;}
+        img#tv{display: none;}
+        img#tablet{display: none;}
+
+        border: 2px solid black;
+       text-align: center;
+       width: 80vw;
+       height: 50vh;
+    }
+    main::after{
+        content: "Mais conteúdos assim em thulioolimpio.github.io";
+       
+    }
+}
+
+@media  screen and (min-width:767.98px) and (max-width:991.98px) {
+
+    body{
+        background-image: url(../back-tablet.jpg);
+    }
+   img#phone{display: none;}
+   img#pc{display: none;}
+   img#print{display: none;}
+   img#tv{display: none;}
+   img#tablet{display: block;}
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1199.98px) {
+
+    body{
+        background-image: url("../back-pc.jpg");
+    }
+    img#phone{display: none;}
+    img#pc{display: block;}
+    img#print{display: none;}
+    img#tv{display: none;}
+    img#tablet{display: none;}
+    
+}
+
+@media  screen and (min-width:1200px) {
+
+    body{
+
+        background-image: url('../back-tv.jpg');
+    }
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    img#tv{display: block;}
+    img#tablet{display: none;}
+}
