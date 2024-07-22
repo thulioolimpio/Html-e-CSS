@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Gênero</title>
+    <style>
+        .radio {
+            display: inline-block; /* Exibe cada rádio em uma linha separada */
+            margin: 10px 0; /* Espaçamento entre os elementos de rádio */
+        }
+
+        .radio label {
+            font-size: 0.5em; /* Tamanho da fonte do label */
+            margin-right: 10px; /* Espaçamento entre o label e o input */
+        }
+
+        .radio input[type="radio"] {
+            margin-left: 5px;
+            padding: 10px; /* Aumenta a área clicável */
+            border: 2px solid #000; /* Define a borda */
+            border-radius: 5px; /* Arredonda as bordas */
+            width: 20px; /* Largura do input */
+            height: 20px; /* Altura do input */
+            appearance: none; /* Remove o estilo padrão */
+            -webkit-appearance: none; /* Remove o estilo padrão no WebKit */
+        }
+
+        .radio input[type="radio"]:checked {
+            background-color: #000; /* Cor de fundo quando selecionado */
+            border-color: #000; /* Cor da borda quando selecionado */
+        }
+    </style>
+</head>
+<body>
+    <div class="radio">
+        <label for="imasculino">Masculino</label>
+        <input type="radio" required name="genero" id="imasculino">
+    </div>
+    <div class="radio">
+        <label for="ifeminino">Feminino</label>
+        <input type="radio" required name="genero" id="ifeminino">
+    </div>
+    <div class="radio">
+        <label for="ipersonalizado">Personalizado</label>
+        <input type="radio" required name="genero" id="ipersonalizado">
+    </div>
+</body>
+</html>
